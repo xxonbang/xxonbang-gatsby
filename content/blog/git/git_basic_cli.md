@@ -10,16 +10,16 @@ draft: false
  
 ## git 사용자 설정 (global)
 - user name 설정
-```sh
+```shell script
 git config --global user.name "실제 user name"
 ```
 - user password 설정
-```sh
+```shell script
 git config --global user.password "실제 user password"
 ```
  
 ## 기존에 있는 git repository clone
-```sh
+```
 git clone https://github.com/xxonbang/repository           : repository cloning
 cd clone 한 폴더명                                           : clone 한 폴더로 진입
 touch README.md                                            : 특정 file 생성
@@ -28,7 +28,7 @@ git commit -m "add README"                                 : stage 에 등록한
 git push -u origin master                                  : target repository 의 master branch 에 push
 ```
 ## 새로운 online repository 생성 후 source push
-```sh
+```
 cd 폴더명                                                        : source folder 로 진입
 git init                                                       : git 생성
 git remote add origin https://github.com/xxonbang/repository   : local 에 target online git repository 등록
