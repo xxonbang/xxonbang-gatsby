@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-bee",
+  "name": "xxonbang-gatsby.netlify.app",
   "private": true,
-  "description": "Gatsby blog starter template",
+  "description": "xxonbang's Gatsby blog",
   "version": "0.1.0",
-  "author": "Jbee[JaeYeopHan]<ljyhanll@gmail.com>",
+  "author": "xxonbang[Byeongcheol Son]<mackulri@gmail.com>",
   "bugs": {
-    "url": "https://github.com/JaeYeopHan/gatsby-starter-bee/issues"
+    "url": "https://github.com/xxonbang/xxonbang-gatsby/issues"
   },
   "dependencies": {
     "gatsby": "^2.2.8",
@@ -85,7 +85,7 @@
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "build": "gatsby build",
+    "build": "gatsby build && cp googlee81686d6973cc8a4.html public/",
     "lh": "lighthousebot",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
