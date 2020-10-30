@@ -46,19 +46,22 @@ angular 의 service component 를 생성하고 이를 적재적소에 사용하�
 })
 ```
 ## 3. service 에 설정
-생성한 service 에 직접 provide 할 영역을 설정해 줄 수 있다. 기본 옵션은 'root', 'platform', 'any' 등이 있으며, 각각의 옵션에 따라 해당 service 가 provided 되는 영역에 차이가 생기게 된다.
-위 3가지 옵션들의 간단한 차이점은 아래와 같다
-- root : 해당 application 의 최상위 root 레벨에 service 를 등록하는 것으로, 이를 통해 application 내의 모든 module 및 component 가 해당 service 를 injection 받을 수 있다.
-- platform : root 보다 더 상위의 개념으로서, 어떠한 angular application 이 여러개의 application 의 집합으로서 구성될 때에 하나의 service 를 등록한 특정 application 에 대해서만 service 를 global 하게 injection 하게 아니라, platform 개념으로 묶인 모든 angular application 들에 global 하게 공유되게 된다.
-- any : 해당 service 를 injection 하는 모든 모듈에 대해서 singleton 방식의 instance 가 아닌 고유한 instance 를 제공한다. 즉, 애플리케이션에 3 개의 서로 다른 모듈이 있고 그 중 2 개가 해당 service 를 사용하는 경우 서로 다른 instance 2 개가 생성되며, 이를 injection 하는 각 module 에 각각 하나씩 생성되게 된다.  
-
-자세한 내용은 [링크](https://blog.angulartraining.com/dependency-injection-with-angular-9-63ce524496d9)를 통해 확인할 수 있으며, singleton 개념이 등장한 이유에 대해서는 마무리 부분을 읽어보길 바란다.  
+생성한 service 에 직접 provide 할 영역을 설정해 줄 수 있다.
 설정 위치는 @Injectable 데코레이션의 providedIn 에 옵션 값을 설정해 주면 된다.
 ```typescript 
 @Injectable({
   providedIn: 'root'
 })
-```
+``` 
+기본 옵션은 'root', 'platform', 'any' 등이 있으며, 각각의 옵션에 따라 해당 service 가 provided 되는 영역에 차이가 생기게 된다.
+위 3가지 옵션들의 간단한 차이점은 아래와 같다
+- root : 해당 application 의 최상위 root 레벨에 service 를 등록하는 것으로, 이를 통해 application 내의 모든 module 및 component 가 해당 service 를 injection 받을 수 있다.
+- platform : root 보다 더 상위의 개념으로서, 어떠한 angular application 이 여러개의 application 의 집합으로서 구성될 때에 하나의 service 를 등록한 특정 application 에 대해서만 service 를 global 하게 injection 하게 아니라, platform 개념으로 묶인 모든 angular application 들에 global 하게 공유되게 된다.
+- any : 해당 service 를 injection 하는 모든 모듈에 대해서 singleton 방식의 instance 가 아닌 고유한 instance 를 제공한다. 즉, 애플리케이션에 3 개의 서로 다른 모듈이 있고 그 중 2 개가 해당 service 를 사용하는 경우 서로 다른 instance 2 개가 생성되며, 이를 injection 하는 각 module 에 각각 하나씩 생성되게 된다.  
+<br>
+
+자세한 내용은 [링크](https://blog.angulartraining.com/dependency-injection-with-angular-9-63ce524496d9)를 통해 확인할 수 있으며, `singleton` 개념이 등장한 이유에 대해서는 마무리 부분을 읽어보길 바란다.  
+
 
 ## 마무리
 총 3가지 방법을 통해 생성한 service 를 injection 설정하여 줄 수 있고, 이를 활용하여 해당 service 의 injection 범위를 정의해 줄 수 있다.  
