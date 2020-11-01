@@ -1,5 +1,5 @@
 ---
-title: '[Angular] providers 혹은 providedIn 설정의 이해'
+title: '[Angular] service 의 providers 혹은 providedIn 설정의 이해'
 date: 2020-10-30 16:01:13
 category: 'angular'
 draft: false
@@ -63,7 +63,7 @@ angular 의 service component 를 생성하고 이를 적재적소에 사용하�
 자세한 내용은 [링크](https://blog.angulartraining.com/dependency-injection-with-angular-9-63ce524496d9)를 통해 확인할 수 있으며, `singleton` 개념이 등장한 이유에 대해서는 마무리 부분을 읽어보길 바란다.  
 
 
-## 마무리
+## 4. 마무리
 총 3가지 방법을 통해 생성한 service 를 injection 설정하여 줄 수 있고, 이를 활용하여 해당 service 의 injection 범위를 정의해 줄 수 있다.  
 마지막으로 angular injector 의 작동방식 중 핵심개념이라고 생각 되는 점 중에 하나를 설명하고 마무리 하겠다.
 - angular injector 는 위의 방식을 통해서 등록된 service 들에 대한 instance container 를 보유하고 있고 injection 요청들에 대하여 singleton 방식으로 작동한다.

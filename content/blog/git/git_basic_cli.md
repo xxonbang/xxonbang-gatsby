@@ -41,8 +41,3 @@ git add .                                                      : 현재 폴더 �
 git commit -m "commit message"                                 : 커밋 메세지와 함께 commit
 git push -u origin master                                      : target repository 의 master branch 에 push
 ```
-
-
-<pre><code class="html">asdf</code></pre>
-<pre><code class="html">&lt;a href=&quot;https://www.google.co.kr/&quot; target=&quot;_blank&quot;&gt;GOOGLE&lt;/a&gt;
-</code></pre>
