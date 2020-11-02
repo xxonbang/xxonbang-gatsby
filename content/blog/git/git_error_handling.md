@@ -1,5 +1,5 @@
 ---
-title: 'git error handling'
+title: '[Git] various error handling'
 date: 2020-10-30 13:43:00
 category: 'git'
 draft: false

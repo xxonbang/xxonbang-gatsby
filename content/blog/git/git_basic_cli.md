@@ -1,5 +1,5 @@
 ---
-title: 'git 명령어 정리'
+title: '[Git] 기본 명령어 정리'
 date: 2020-10-29 17:03:00
 category: 'git'
 draft: false
