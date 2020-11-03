@@ -62,6 +62,12 @@ body.light {
     }
   }
 
+  h1,
+  h2 {
+    //border-bottom-color: rgba(255, 255, 255, 0.3);
+    border-bottom-color: black;
+  }
+
   // post
   .navigator {
     a {
@@ -69,4 +75,12 @@ body.light {
       color: $navigator-text-color;
     }
   }
+}
+
+.about h1 {
+  border-left: 10px solid #f4791f;
+  padding-left: 10px;
+  padding-bottom: 0;
+  border-bottom: transparent!important;
+  // line-height: 1.05;
 }

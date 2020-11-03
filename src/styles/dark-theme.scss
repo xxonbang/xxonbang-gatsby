@@ -83,3 +83,11 @@ body.dark {
     border-bottom: 1px solid #eee;
   }
 }
+
+.about h1 {
+  border-left: 10px solid #f4791f;
+  padding-left: 10px;
+  padding-bottom: 0;
+  border-bottom: transparent!important;
+  // line-height: 1.05;
+}
