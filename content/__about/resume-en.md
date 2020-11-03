@@ -36,5 +36,5 @@ lang: 'en'
         - MongoDB
 1. **Infra && etc**
     - AWS configuration, Jenkins, Heroku, Nginx, Tomcat
-1. **형상관리 및 이슈 tracking**
+1. **형상관리 && 이슈 tracking && etc**
     - Git, SVN, Jira, Trello, Swagger
