@@ -80,15 +80,13 @@ export const ThemeSwitch = () => {
           checkedIcon={
             <div className="icon checkedIcon">
               {/*<MoonIcon />*/}
-              {/*L*/}
-              D
+              L
             </div>
           }
           uncheckedIcon={
             <div className="icon uncheckedIcon">
               {/*<SunIcon />*/}
-              {/*D*/}
-              L
+              D
             </div>
           }
           offColor={'#d9dfe2'}
