@@ -33,7 +33,7 @@ const SunIcon = () => {
   )
 }
 function getTheme(checked) {
-  return checked ? THEME.DARK : THEME.LIGHT
+  return checked ? THEME.LIGHT : THEME.DARK
 }
 
 function toggleTheme(theme) {
@@ -80,13 +80,15 @@ export const ThemeSwitch = () => {
           checkedIcon={
             <div className="icon checkedIcon">
               {/*<MoonIcon />*/}
-              L
+              {/*L*/}
+              D
             </div>
           }
           uncheckedIcon={
             <div className="icon uncheckedIcon">
               {/*<SunIcon />*/}
-              D
+              {/*D*/}
+              L
             </div>
           }
           offColor={'#d9dfe2'}
