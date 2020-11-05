@@ -33,7 +33,7 @@ const SunIcon = () => {
   )
 }
 function getTheme(checked) {
-  return checked ? THEME.LIGHT : THEME.DARK
+  return checked ? THEME.DARK : THEME.LIGHT
 }
 
 function toggleTheme(theme) {
@@ -52,7 +52,7 @@ function toggleTheme(theme) {
 }
 
 export const ThemeSwitch = () => {
-  const [checked, setChecked] = useState(false)
+  const [checked, setChecked] = useState(true)
 
   const handleChange = checked => {
     const theme = getTheme(checked)
