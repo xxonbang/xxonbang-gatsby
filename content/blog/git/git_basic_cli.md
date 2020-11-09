@@ -22,7 +22,7 @@ git config --global user.name "실제 user name"
 git config --global user.password "실제 user password"
 ```
  
-## 기존에 있는 git repository clone
+## Online git repository clone (online repository → Local) 
 ```
 git clone https://github.com/xxonbang/repository           : repository cloning
 cd clone 한 폴더명                                           : clone 한 폴더로 진입
@@ -31,8 +31,11 @@ git add README.md                                          : 생성한 file 을 
 git commit -m "add README"                                 : stage 에 등록한 source 를 commit
 git push -u origin master                                  : target repository 의 master branch 에 push
 ```
+- git site (ex. github, gitlab 등) 에 이미 존재하는 repository 의 내용 및 source 를 자신의 PC(local)에 clone
+- 작업을 통해 commit / push 할 file 생성 (아래 예시는 임시로 README.md 파일 생성)
+- cloning 을 통해 연결 된 online git repository 에 source 를 push
 
-## 새로운 online repository 생성 후 source push
+## Local 에 새로운 source folder 생성 후 online repository 연결
 ```
 cd 폴더명                                                        : source folder 로 진입
 git init                                                       : git 생성
@@ -41,3 +44,6 @@ git add .                                                      : 현재 폴더 �
 git commit -m "commit message"                                 : 커밋 메세지와 함께 commit
 git push -u origin master                                      : target repository 의 master branch 에 push
 ```
+- local 에 source 작업한 폴더(project 혹은 workspace 폴더 등)에 진입 후 git 초기 생성
+- online 에 미리 생성해 둔 repository 의 URL 로 local 에 remote 등록
+- 현재 폴더에 있는 모든 file 을 stage 에 올리고, commit 수행 및 push
