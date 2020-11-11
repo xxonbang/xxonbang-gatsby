@@ -26,7 +26,7 @@ lang: 'en'
 
 ## 보유 기술
 1. **Front-End**
-    - Javascript, Typescript, Angular, React, Vue, Svelte, JSP, Jquery
+    - HTML, CSS, SCSS, Javascript, Typescript, Angular, React, Vue, Svelte, JSP, Jquery
 1. **Back-End**
     - JAVA, Spring, Spring Boot, NodeJS
 1. **Database**
