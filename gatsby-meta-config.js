@@ -2,7 +2,7 @@ module.exports = {
   title: `XXONBANG`,
   description: `Blog posted about ...`,
   author: `Byeongcheol Son`,
-  introduction: `개발자가 되고 싶은 코더, 초보의 눈높이에서 이해하고 재해석하는 학습과 개발/디버그의 기록`,
+  introduction: `학습과 개발/디버그의 기록`,
   siteUrl: `https://xxonbang-gatsby.netlify.app`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
